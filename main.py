@@ -2,7 +2,7 @@
 from data_analysis import Individual,Section,Compare
 print("WELCOME TO THE DASHBOARD")
 while True:
-    choice1=input("Do you want to analyze personal(p)/class(c) statistics or want to compare(e)? ")
+    choice1=input("Do you want to analyze personal(p)/class(c) statistics/compare(e) or exit(x) ? ")
     if(choice1=="p"):
         roll=input("Enter the roll number: ")
         a=Individual(roll)
@@ -36,6 +36,8 @@ while True:
         a2=input("Enter the second roll number: ")
         c=Compare(a1,a2)
         c.graph()
+    elif(choice1=='x'):
+        break
 
 
 
